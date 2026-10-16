@@ -35,7 +35,6 @@ df = df.select(
     "municipio"
 )
 
-# AQUÍ SIGUE TU CÓDIGO IGUAL — NO BORRAS NADA
 df.printSchema()
 df.show(5, truncate=25)
 
