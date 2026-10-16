@@ -59,7 +59,7 @@ print (f" Eliminados registros in áreas: {df.count():,} restantes")
 df = df.fillna({
     "causa": "No especificada",
     "municipio": "No especificado",
-    "A_o": 0
+    "a_o": 0
 })
 
 print (f" Datos rellenados y listos: {df.count():,} registros finales")
