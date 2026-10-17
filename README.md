@@ -23,14 +23,14 @@ Apache Hadoop: almacenamiento
 Apche Spark/PySpark:  procesamiento de los datos
 Matplotlib: generación de gráficos
 
-##\n IMPLEMENTACIÓN DE SPARK Y TRANSFORACIÓN 
+## IMPLEMENTACIÓN DE SPARK Y TRANSFORACIÓN 
 
 ## DESCARGA Y CARGA DADATASET
 se leyó el conjunto de daos desde su ubicación original https://wwww.datos.gov.co/api/v3/views/iczg-dyt3/query.csv y se reposo en Hadoop en la carpeta Problema_tarea3 y dentro de está  con nombre del archivo query.csv permitiendo acceder a toda la información de forma distribuida.
 Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga, limpieza, transformación, exploración y visualización de los rseultados
 
 
-## \n LIMPIEZA Y TRANSFORMACIÓN 
+## LIMPIEZA Y TRANSFORMACIÓN 
  -Verificamos nombre de las variables
  
 ============================================================
