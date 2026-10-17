@@ -14,21 +14,23 @@ que generan la deforestación ene le Departamento del Chocó en los periodos men
 ## FUENTE DE DATOS
 Origen: Datos Abiertos Colombia (www.datos.gov.co). 
 Conjunto de datos: hectáreas deforestadas por año en el Chocó. 
-Columnas: ID, Tipo_Geometria, Año, Imagen, Causa, Area_Hectarias, Observacion, Latitud, Longitud, Municipio.
+Columnas: id, tipo_geometria, a_o, imagen, causa, area_ha, observacion, latitud, longitud, municipio.
+Total registros: 7,937
 
 ## TECNOLOGÍAS UTILIZADAS
--Python3
-- Apache Hadoop: almacenamiento 
-- Apche Spark/PySpark:  procesamiento de los datos
-- Matplotlib: generación de gráficos
+Python3
+Apache Hadoop: almacenamiento 
+Apche Spark/PySpark:  procesamiento de los datos
+Matplotlib: generación de gráficos
 
-## IMPLEMENTACIÓN DE SPARK Y TRANSFORACIÓN 
+====================================================================================================
+                          ## IMPLEMENTACIÓN DE SPARK Y TRANSFORACIÓN 
+====================================================================================================
 
 ## DESCARGA Y CARGA DADATASET
 se leyó el conjunto de daos desde su ubicación original https://wwww.datos.gov.co/api/v3/views/iczg-dyt3/query.csv y se reposo en Hadoop en la carpeta Problema_tarea3 y dentro de está  con nombre del archivo query.csv permitiendo acceder a toda la información de forma distribuida.
 Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga, limpieza, transformación, exploración y visualización de los rseultados
 
-Total registros: 7,937
 
 ## LIMPIEZA Y TRANSFORMACIÓN 
  -Verificamos nombre de las variables
