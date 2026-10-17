@@ -33,7 +33,10 @@ Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga,
 ## LIMPIEZA Y TRANSFORMACIÓN 
  -Verificamos nombre de las variables
 ```python
+
+============================================================
 VARIABLES EXISTENTES EN EL DATASET:
+============================================================
 ':id'
 ':version'
 ':created_at'
@@ -48,8 +51,7 @@ VARIABLES EXISTENTES EN EL DATASET:
 'latitud'
 'longitud'
 'municipio'
-
-
+============================================================
 root
  |-- id: integer (nullable = true)
  |-- tipo_geometria: string (nullable = true)
@@ -57,7 +59,7 @@ root
  |-- causa: string (nullable = true)
  |-- area_ha: double (nullable = true)
  |-- municipio: string (nullable = true)
-
+============================================================
  
 
 +----+--------------+----+-------+--------+---------+
@@ -81,6 +83,10 @@ only showing top 5 rows
 - Estandarización de nombre de la variable Causa
   "Incendio"; "Incendio" , "Minería"| "mineria"): "Mineria" , "Cultivo": "Cultivo"
 ```python
+
+============================================================
+Limpieza de datos
+============================================================
 +---+--------------+---+-----+-------+---------+
 | id|tipo_geometria|a_o|causa|area_ha|municipio|
 +---+--------------+---+-----+-------+---------+
@@ -96,6 +102,10 @@ Datos limpios: 7,937 registros
 ## ANÁLISIS EXPLORATORIO
 - Análisis de deforestación total por causa
 ```python
+
+============================================================
+ANÁLISIS EXPLORATORIO
+============================================================
 +--------+------------------+
 |   Causa|   Total_Hectareas|
 +--------+------------------+
@@ -141,15 +151,27 @@ Datos limpios: 7,937 registros
 +--------------------+------------------+
 ```
 
-## ANÁLISIS CON RDD
+## Análisis con RDD
 - Resultados del análisis de deforestación total por causa
-  Incendio ------ 25715.04 hectáreas
-  Mineria ------- 19378.91 hectáreas
-  Cultivo ------- 12807.39 hectáreas
-  Otra ----------- 6068.93 hectáreas
-  
+ ```python
+============================================================
+ANÁLISIS CON RDD
+============================================================
 
-## GRÁFICOS 
+ Por Causa (RDD):
+   Incendio        → 25715.04 hectáreas
+   Mineria         → 19378.91 hectáreas
+   Cultivo         → 12807.39 hectáreas
+   Otra            → 6068.93 hectáreas
+Guardado: Deforestacion_causa.png
+Guardado: Deforestacion_anual.png
+Guardado: Deforestacion_municipios.png
+
+Resultados guardados en HDFS
+Proceso finalizado
+
+ ```
+## Gráficos
 - Por causa y total de hectáreas
 - Por año y total de hectáreas
 - Por municipio y total de hectáreas
