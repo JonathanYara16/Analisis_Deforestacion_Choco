@@ -32,9 +32,8 @@ Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga,
 
 ## LIMPIEZA Y TRANSFORMACIÓN 
  -Verificamos nombre de las variables
- 
-
-# VARIABLES EXISTENTES EN EL DATASET:
+```python
+VARIABLES EXISTENTES EN EL DATASET:
 ':id'
 ':version'
 ':created_at'
@@ -49,7 +48,8 @@ Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga,
 'latitud'
 'longitud'
 'municipio'
-============================================================
+
+
 root
  |-- id: integer (nullable = true)
  |-- tipo_geometria: string (nullable = true)
@@ -57,6 +57,8 @@ root
  |-- causa: string (nullable = true)
  |-- area_ha: double (nullable = true)
  |-- municipio: string (nullable = true)
+
+ 
 
 +----+--------------+----+-------+--------+---------+
 |  id|tipo_geometria| a_o|  causa| area_ha|municipio|
@@ -68,7 +70,7 @@ root
 |7464|       Polygon|2020|Cultivo|0.184549|   ACANDÍ|
 +----+--------------+----+-------+--------+---------+
 only showing top 5 rows
-
+```
 - Seleccionamos variables que solo vamos a utilizar ("id", "tipo_geometria", "a_o", "causa", "area_ha", "municipio")
 - Eliminamos valores nulos
 - Eliminamos duplicados con ID
@@ -78,7 +80,7 @@ only showing top 5 rows
   "tipo_geometria", "Tipo_Geometria"; a_o", "Ano"; "area_ha", "Area_Hectareas" ; "municipio", "Municipio" ; "causa", "Causa"
 - Estandarización de nombre de la variable Causa
   "Incendio"; "Incendio" , "Minería"| "mineria"): "Mineria" , "Cultivo": "Cultivo"
-  
+```python
 +---+--------------+---+-----+-------+---------+
 | id|tipo_geometria|a_o|causa|area_ha|municipio|
 +---+--------------+---+-----+-------+---------+
@@ -90,10 +92,10 @@ Eliminados registros in áreas: 7,937 restantes
 Datos rellenados y listos: 7,937 registros finales
 Datos limpios: 7,937 registros
 
-
+```
 ## ANÁLISIS EXPLORATORIO
 - Análisis de deforestación total por causa
-  
+```python
 +--------+------------------+
 |   Causa|   Total_Hectareas|
 +--------+------------------+
@@ -102,9 +104,9 @@ Datos limpios: 7,937 registros
 | Cultivo|12807.391442999973|
 |    Otra| 6068.934614999997|
 +--------+------------------+
-
+```
 - Análisis de deforestación total por año
-  
+ ```python 
  Deforestación por Año:
 +----+------------------+
 | Ano|   Total_Hectareas|
@@ -118,9 +120,11 @@ Datos limpios: 7,937 registros
 |2020|3397.2582140000013|
 |2021| 4451.756725999999|
 +----+------------------+
-
+```
 - Análisis de deforestación total por municipios
+  ```python
   Top 10 Municipios más afectados:
+ ```python
 +--------------------+------------------+
 |           Municipio|   Total_Hectareas|
 +--------------------+------------------+
@@ -135,6 +139,7 @@ Datos limpios: 7,937 registros
 |  UNIÓN PANAMERICANA|1531.9702609999997|
 |              ATRATO|1320.1302229999994|
 +--------------------+------------------+
+```
 
 ## ANÁLISIS CON RDD
 - Resultados del análisis de deforestación total por causa
