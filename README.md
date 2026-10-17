@@ -1,30 +1,30 @@
-##PROBLEMA  
+## PROBLEMA  
 Teniendo en cuenta que el Chocó es uno de los departamentos con mayor riqueza biológica de Colombia tanto de fauna como de flora, 
 pero presenta una problemática continua de deforestación esto lleva a la perdida de cobertura boscosa ya sea por incendios, minerías y cultivo 
 entre los periodos 2014 al 2021. 
 Se busca realizar un análisis implementando el procesamiento distribuido con Apache Spark (Python/PySpark) permitiendo identificar las causas 
 que generan la deforestación ene le Departamento del Chocó en los periodos mencionados anteriormente. 
 
-##OBJETIVOS: 
+## OBJETIVOS: 
 - Identificar las principales causas de deforestación.
 - Determinar los años con mayor pérdida de cobertura. 
 - Ubicar los municipios más afectados.  
 - Lograr identificar resultados mediante DataFrames y RDD.
 
-##FUENTE DE DATOS
+## FUENTE DE DATOS
 Origen: Datos Abiertos Colombia (www.datos.gov.co). 
 Conjunto de datos: hectáreas deforestadas por año en el Chocó. 
 Columnas: ID, Tipo_Geometria, Año, Imagen, Causa, Area_Hectarias, Observacion, Latitud, Longitud, Municipio.
 
-##TECNOLOGÍAS UTILIZADAS
+## TECNOLOGÍAS UTILIZADAS
 -Python3
 - Apache Hadoop: almacenamiento 
 - Apche Spark/PySpark:  procesamiento de los datos
 - Matplotlib: generación de gráficos
 
-##IMPLEMENTACIÓN DE SPARK Y TRANSFORACIÓN 
+## IMPLEMENTACIÓN DE SPARK Y TRANSFORACIÓN 
 
-## 1 DESCARGA Y CARGA DADATASET
+## DESCARGA Y CARGA DADATASET
 se leyó el conjunto de daos desde su ubicación original https://wwww.datos.gov.co/api/v3/views/iczg-dyt3/query.csv y se reposo en Hadoop en la carpeta Problema_tarea3 y dentro de está  con nombre del archivo query.csv permitiendo acceder a toda la información de forma distribuida.
 Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga, limpieza, transformación, exploración y visualización de los rseultados
 
