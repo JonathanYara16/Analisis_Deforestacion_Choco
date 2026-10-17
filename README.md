@@ -1,9 +1,5 @@
 ## PROBLEMA  
-Teniendo en cuenta que el Chocó es uno de los departamentos con mayor riqueza biológica de Colombia tanto de fauna como de flora, 
-pero presenta una problemática continua de deforestación esto lleva a la perdida de cobertura boscosa ya sea por incendios, minerías y cultivo 
-entre los periodos 2014 al 2021. 
-Se busca realizar un análisis implementando el procesamiento distribuido con Apache Spark (Python/PySpark) permitiendo identificar las causas 
-que generan la deforestación ene le Departamento del Chocó en los periodos mencionados anteriormente. 
+Teniendo en cuenta que el Chocó es uno de los departamentos con mayor riqueza biológica de Colombia, tanto de fauna como de flora, presenta a su vez una problemática continua de deforestación que ocasiona la pérdida de cobertura boscosa por causas como incendios, minería, cultivos y otras actividades, entre los años 2014 y 2021. El presente trabajo tiene como objetivo realizar un análisis mediante procesamiento distribuido con Apache Spark (Python/PySpark), que permita identificar las causas principales que generan la deforestación en el departamento del Chocó durante el periodo mencionado. 
 
 ## OBJETIVOS: 
 - Identificar las principales causas de deforestación.
