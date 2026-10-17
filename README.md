@@ -31,9 +31,9 @@ Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga,
 Total registros: 7,937
 
 ## LIMPIEZA Y TRANSFORMACIÓN 
-
-- Verificamos nombre de las variables
-  ============================================================
+ -Verificamos nombre de las variables
+ 
+============================================================
 VARIABLES EXISTENTES EN EL DATASET:
 ============================================================
 ':id'
@@ -79,7 +79,8 @@ only showing top 5 rows
   "tipo_geometria", "Tipo_Geometria"; a_o", "Ano"; "area_ha", "Area_Hectareas" ; "municipio", "Municipio" ; "causa", "Causa"
 - Estandarización de nombre de la variable Causa
   "Incendio"; "Incendio" , "Minería"| "mineria"): "Mineria" , "Cultivo": "Cultivo"
-  +---+--------------+---+-----+-------+---------+
+  
++---+--------------+---+-----+-------+---------+
 | id|tipo_geometria|a_o|causa|area_ha|municipio|
 +---+--------------+---+-----+-------+---------+
 |  0|             0|  0|  219|      0|        0|
@@ -93,7 +94,8 @@ Datos limpios: 7,937 registros
 
 ## ANÁLISIS EXPLORATORIO
 - Análisis de deforestación total por causa
-- +--------+------------------+
+  
++--------+------------------+
 |   Causa|   Total_Hectareas|
 +--------+------------------+
 |Incendio|      25715.042708|
