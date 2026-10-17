@@ -33,7 +33,7 @@ Se crea archivo analisis_deforestacion.py donde reposa código para hacer carga,
 ## LIMPIEZA Y TRANSFORMACIÓN 
  -Verificamos nombre de las variables
 ```python
-
+Total registros: 7,937
 ============================================================
 VARIABLES EXISTENTES EN EL DATASET:
 ============================================================
