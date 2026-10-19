@@ -173,6 +173,6 @@ Proceso finalizado
 - Por municipio y total de hectáreas
 
 ## VISUALIZACIÓN DE RESULTADOS NOS PERMITIO IDENTIFICAR ENTRE EL PERIODO 20140 AL 2021 
-- Nos permitió identificar como la deforestación en el choco su principal causa son los incendios con una afectación de más de 25 mil Hectáreas segudido de la minería con casi 19 mil hectáreas seguido de los cultivos con más de 12 mil hectáreas y otras aproximadamente más de 6 mil hectáreas.
+- Nos permitió identificar como la deforestación en el choco su principal causa son los incendios con una afectación de más de 25 mil Hectáreas seguido de la minería con más de 19 mil hectáreas seguido de los cultivos con más de 12 mil hectáreas y otras aproximadamente más de 6 mil hectáreas.
 - Nos permitió identificar 10 municipios con mayores afectaciones por incendios forestales en el choco ubicándose RIOSUCIO con más de 22 ml hectáreas seguida de UNGUÍA aproximadamente 12 mil hectáreas, le sigue EL ENCANTO DE SANPABLO, NÓVITA, RÍO QUITO, MEDIO ATRATO, ISTMINA, CARMEN DEL DARIEN, UNIÓN PANAMERICA, ATRATO
 - Nos permitió  identificar la evolución de la forestación en el choco por año donde el 2016 hubo mayor afectaciones de está problemática con mas de 26 mil hectáreas, seguido del año 2014 con más de 14 mil hectáreas, 2019 con mas de 9 mil hectáreas despues 2021, 2020, 2015, 2017, 2018
